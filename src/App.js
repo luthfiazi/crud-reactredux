@@ -27,6 +27,62 @@ export default class App extends Component {
         alamat: 'Jayapura',
         umur: 24,
         NoHp: '1234567890'
+      },
+      {
+        id: 4,
+        nama: 'luthfi',
+        alamat: 'Bandung',
+        umur: 24,
+        NoHp: '1234567890',
+      },
+      {
+        id: 5,
+        nama: 'Anggi',
+        alamat: 'Lebak',
+        umur: 24,
+        NoHp: '1234567890'
+      },
+      {
+        id: 6,
+        nama: 'Dalvin',
+        alamat: 'Jayapura',
+        umur: 24,
+        NoHp: '1234567890'
+      },
+      {
+        id: 7,
+        nama: 'luthfi',
+        alamat: 'Bandung',
+        umur: 24,
+        NoHp: '1234567890',
+      },
+      {
+        id: 8,
+        nama: 'Anggi',
+        alamat: 'Lebak',
+        umur: 24,
+        NoHp: '1234567890'
+      },
+      {
+        id: 9,
+        nama: 'Dalvin',
+        alamat: 'Jayapura',
+        umur: 24,
+        NoHp: '1234567890'
+      },
+      {
+        id: 10,
+        nama: 'Anggi',
+        alamat: 'Lebak',
+        umur: 24,
+        NoHp: '1234567890'
+      },
+      {
+        id: 11,
+        nama: 'Dalvin',
+        alamat: 'Jayapura',
+        umur: 24,
+        NoHp: '1234567890'
       }
     ]
   }
