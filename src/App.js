@@ -12,7 +12,7 @@ export default class App extends Component {
         nama: 'luthfi',
         alamat: 'Bandung',
         umur: 24,
-        NoHp: '1234567890'
+        NoHp: '1234567890',
       },
       {
         id: 2,

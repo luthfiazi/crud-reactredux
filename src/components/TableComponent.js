@@ -9,7 +9,10 @@ import BootstrapTable from 'react-bootstrap-table-next';
 
 const columns = [{
   dataField: 'id',
-  text: 'ID'
+  text: 'ID',
+  headerStyle: () => {
+    return {width:"5%"};
+  },
 }, {
   dataField: 'nama',
   text: 'Nama'
@@ -22,13 +25,13 @@ const columns = [{
     formatter:(rowContent, row)=>{
             return (
                 <div>
-                    <Button color="secondary" className="mr-3">
+                    <Button color="secondary" className="mr-2">
                         <FontAwesomeIcon icon={faInfo} /> Detail
                     </Button>
-                    <Button color="secondary" className="mr-3">
+                    <Button color="secondary" className="mr-2">
                         <FontAwesomeIcon icon={faEdit} /> Edit
                     </Button>
-                    <Button color="secondary" className="mr-3">
+                    <Button color="secondary" className="mr-2">
                         <FontAwesomeIcon icon={faTrash} /> Delete
                     </Button>
                 </div>
