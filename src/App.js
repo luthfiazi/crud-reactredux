@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import JumbotronComponent from './components/JumbotronComponent'
 import NavbarComponent from './components/NavbarComponent'
-import TableComponent from './components/TableComponent'
+import HomeContainer from './components/container/HomeContainer';
+import CreateUserContainer from './components/container/CreateUserContainer';
+import DetailUserContainer from './components/container/DetailUserContainer';
+import EditUserContainer from './components/container/EditUserContainer';
+
+import {
+  BrowserRouter,
+  Route
+} from "react-router-dom";
+
 
 export default class App extends Component {
   state = {
@@ -92,7 +101,20 @@ export default class App extends Component {
       <div>
         <NavbarComponent />
         <JumbotronComponent title={this.state.title} />
-        <TableComponent users={this.state.users} />
+        <BrowserRouter>
+          <Route path="/" exact>
+            <HomeContainer />
+          </Route>
+          <Route path="/create" exact>
+            <CreateUserContainer />
+          </Route>
+          <Route path="/detail/:id" exact>
+            <DetailUserContainer />
+          </Route>
+          <Route path="/edit/:id" exact>
+            <EditUserContainer />
+          </Route>
+        </BrowserRouter>
       </div>
     )
   }
